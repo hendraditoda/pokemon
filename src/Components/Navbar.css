@@ -1,0 +1,25 @@
+.Navbar {
+  padding: 10px;
+  background: #ff4236;
+  color: white;
+
+  display: flex;
+  position: sticky;
+  top: -5px;
+  margin: 0;
+  box-shadow: 0 37px 37px -4px rgba(0, 0, 0, 0.02);
+}
+
+.Navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.Navbar a:hover {
+  /* background-color: #ff4236; */
+  color: black;
+}
