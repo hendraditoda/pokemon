@@ -1,29 +1,17 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { PokemonContext } from '../Context/PokemonContext';
-// import Card from '../Components/Card';
+
 import typeColors from '../Datas/type-color';
 import './style.css';
 
 const PokemonDetail = () => {
   let { id } = useParams();
 
-  const {
-    functions,
-    pokemon,
-    setPokemon,
-    nextUrl,
-    setNextUrl,
-    prevUrl,
-    setPrevUrl,
-    loading,
-    setLoading,
-    pokemonDetails,
-    setPokemonDetails,
-  } = useContext(PokemonContext);
+  const { functions, loading, pokemonDetails } = useContext(PokemonContext);
 
-  const { fetchData, getPokemonList, getPokemon, getPokemonData } = functions;
+  const { getPokemon } = functions;
 
   useEffect(() => {
     getPokemon(id);

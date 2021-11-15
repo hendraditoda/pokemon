@@ -1,9 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { PokemonContext } from '../Context/PokemonContext';
-// import { useQuery } from '@apollo/react-hooks';
-// import { GET_POKEMONS } from '../graphql/get-pokemon';
-// import { Pokemon } from '../components/Pokemon';
 
 const MyPokemonList = () => {
   let { id } = useParams();

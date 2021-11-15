@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import typeColors from '../../Datas/type-color';
+// import typeColors from '../../Datas/type-color';
 import './style.css';
 
 const Card = ({ pokemon }) => {

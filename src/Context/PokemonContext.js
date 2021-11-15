@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { createContext, useState } from 'react';
-import { useHistory } from 'react-router';
-import * as graphql from '../GraphQL/graphql';
-import { useQuery } from '@apollo/client';
+// import { useHistory } from 'react-router';
+// import * as graphql from '../GraphQL/graphql';
+// import { useQuery } from '@apollo/client';
 
 export const PokemonContext = createContext();
 
